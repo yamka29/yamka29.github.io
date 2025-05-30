@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Frise Chronologique Simple</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  .timeline {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 40px 0;
+    padding: 0 10px;
+  }
+
+  /* Ligne horizontale */
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    height: 4px;
+    background: #3498db;
+    z-index: 1;
+    border-radius: 2px;
+  }
+
+  .event {
+    position: relative;
+    background: white;
+    text-align: center;
+    width: 100px;
+    z-index: 2;
+  }
+
+  /* Cercle de l'événement */
+  .event::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    background: #3498db;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    z-index: 3;
+  }
+
+  /* Date */
+  .date {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  /* Description */
+  .desc {
+    font-size: 0.9em;
+    color: #555;
+  }
+
+  /* Responsive : empilement vertical sur petits écrans */
+  @media (max-width: 500px) {
+    .timeline {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .timeline::before {
+      top: auto;
+      left: 20px;
+      right: auto;
+      width: 4px;
+      height: 100%;
+      background: #3498db;
+    }
+    .event {
+      width: auto;
+      margin-left: 40px;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+    .event::before {
+      top: 0;
+      left: -30px;
+      transform: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h2>Frise Chronologique</h2>
+
+<div class="timeline">
+  <div class="event">
+    <div class="date">1990</div>
+    <div class="desc">Naissance</div>
+  </div>
+  <div class="event">
+    <div class="date">2008</div>
+    <div class="desc">Début des études</div>
+  </div>
+  <div class="event">
+    <div class="date">2015</div>
+    <div class="desc">Premier emploi</div>
+  </div>
+  <div class="event">
+    <div class="date">2023</div>
+    <div class="desc">Lancement du projet</div>
+  </div>
+</div>
+
+</body>
+</html>
