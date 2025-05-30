@@ -517,6 +517,41 @@ header > nav > a:hover {
   }
 }
 
+
+/*
+----------EN SAVOIR PLUS----------
+*/
+.en-savoir-plus {
+  padding: 2em 1em;
+  margin: 1em;
+}
+
+.en-savoir-plus h1 {
+  color: #F67460;
+
+}
+
+.en-savoir-plus p {
+  margin: 1em;
+}
+
+.en-savoir-plus a {
+	color: white;
+	background-color: #f88a4d;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 150%;           
+	letter-spacing: 2px;        
+	padding: 0.1% 7%;       
+	border-radius: 1em;  
+  margin: 1em;
+	text-decoration: none;
+}
+
+.en-savoir-plus a:hover {
+	border: 2px solid #f88a4d;
+	font-weight: bold;
+}
+
 /*
 ----------FOOTER----------
 */
