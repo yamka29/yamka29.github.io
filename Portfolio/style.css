@@ -682,12 +682,10 @@ footer div div > aside img{
 
 ------------------------*/
 
-
-
-
-
-
-
+.competences > h1 {
+  color: #F67460;
+  margin: 1em;
+}
 
 
 
@@ -696,8 +694,8 @@ footer div div > aside img{
   background-color: transparent;
   width: 300px;
   height: 200px;
-  border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: 1em;
 }
 
 /* This container is needed to position the front and back side */
@@ -708,6 +706,7 @@ footer div div > aside img{
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  border-radius: 1em;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -722,17 +721,18 @@ footer div div > aside img{
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  border-radius: 1em;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-color: #F2A97B;
   color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: #f88a4d;
   color: white;
   transform: rotateY(180deg);
 }
