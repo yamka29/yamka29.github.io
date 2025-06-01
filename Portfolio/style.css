@@ -192,7 +192,7 @@ header > nav > a:hover {
 .langues {
   	background-color: #ffb384;
   	clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 95%);
-	padding: 1em;
+  padding: 1em 0;
   	color: white;
 }
 
@@ -299,7 +299,7 @@ header > nav > a:hover {
 	font-size: 100%;
   background-color: #ffb384;
   clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
-	padding: 6em 1em 4em 1em;
+  padding: 6em 0;
   color: white;
  
 }
@@ -522,8 +522,8 @@ header > nav > a:hover {
 ----------EN SAVOIR PLUS----------
 */
 .en-savoir-plus {
-  padding: 2em 1em;
   margin: 1em;
+  margin-bottom: 4em;
 }
 
 .en-savoir-plus h1 {
@@ -533,6 +533,7 @@ header > nav > a:hover {
 
 .en-savoir-plus p {
   margin: 1em;
+  padding: 1em 0;
 }
 
 .en-savoir-plus a {
@@ -552,6 +553,10 @@ header > nav > a:hover {
 	font-weight: bold;
 }
 
+.en-savoir-plus + a {
+  background-color: #ffffff;
+  color: #ffffff;
+}
 /*
 ----------FOOTER----------
 */
