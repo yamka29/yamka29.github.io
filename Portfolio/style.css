@@ -692,13 +692,14 @@ footer div div > aside img{
 .grille{
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: center;
+  margin-bottom: 3em;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  width: 400px;
+  width: 450px;
   height: 500px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   margin: 2em;
@@ -732,12 +733,16 @@ footer div div > aside img{
   border-radius: 1em;
   margin: 1em;
   padding: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: #F2A97B;
   color: black;
+
 }
 
 /* Style the back side */
@@ -752,11 +757,11 @@ footer div div > aside img{
   border-color: #ffccad;
   border-width: 5px;
   border-style: solid;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 1em;
 }
 
-.flip-card-front h2 {
+.flip-card-front h2, .flip-card-back h2 {
   font-size: 1.5em;
   margin: 0.5em 0;
 }
