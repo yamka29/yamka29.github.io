@@ -553,6 +553,8 @@ header > nav > a:hover {
 	font-weight: bold;
 }
 
+/*lien secret*/
+
 .en-savoir-plus + a {
   background-color: #ffffff;
   color: #ffffff;
@@ -696,6 +698,7 @@ footer div div > aside img{
   height: 200px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   margin: 1em;
+  padding: 1em;
 }
 
 /* This container is needed to position the front and back side */
@@ -707,6 +710,7 @@ footer div div > aside img{
   transition: transform 0.8s;
   transform-style: preserve-3d;
   border-radius: 1em;
+
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
