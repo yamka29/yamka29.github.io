@@ -690,8 +690,8 @@ footer div div > aside img{
 }
 
 .grille{
-  display: inline-grid;
-  grid-template-columns: 2fr;
+  display: flex;
+  flex-wrap: wrap;
 
 }
 
@@ -748,8 +748,10 @@ footer div div > aside img{
 }
 
 .flip-card-front img {
-  width: 300px;
-
+  height: 350px;
+  border-color: #ffccad;
+  border-width: 5px;
+  border-style: solid;
   object-fit: contain;
   border-radius: 1em;
 }
