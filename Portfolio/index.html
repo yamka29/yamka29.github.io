@@ -46,6 +46,7 @@
         <!----------------------------->
         <!--       PRESENTATION       -->
         <!----------------------------->
+
         <section class="presentation">
             <h1 id="presentation">Présentation</h1>
             <article>
@@ -57,6 +58,7 @@
                 <figure>
                     <img src="images/Photo_CV.jpg" alt="Yiwen KADRI">
                     <figcaption>Image de présentation</figcaption>
+
                 </figure>
             </article>
             <!----------------------------->
@@ -78,7 +80,11 @@
                     <img src=images/drapeau_espagne.png alt="Drapeau espagnol">
                     <p>Niveau A2/B1</p>
                 </div>
+
             </article>
+            <a id="souris???" style="color: transparent;">
+                ???????????
+            </a>
         </section>
         <!----------------------------->
         <!--        QUALITES         -->
@@ -256,6 +262,22 @@
                 </div>
             </div>
         </footer>
+        <audio id="souris_son" src="images/retro-mouse-sound.wav" preload="auto"></audio>      
+        <script>
+            const lienSecret = document.getElementById('souris???');
+            const sourisSon = document.getElementById('souris_son');
+            lienSecret.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.body.classList.toggle('curseur-custom');
+            });
+
+            document.addEventListener('click', function () {
+                if (document.body.classList.contains('curseur-custom')) {
+                sourisSon.currentTime = 0; // Recommence depuis le début à chaque clic
+                sourisSon.play();
+                }
+            });
+        </script>
 </body>
 
 </html>
