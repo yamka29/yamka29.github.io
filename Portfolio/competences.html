@@ -340,4 +340,34 @@
             </div>
         </div>
     </footer>
+    <audio id="souris_son" src="images/retro-mouse-sound.wav" preload="auto"></audio>      
+    <script>
+        const lienSecret = document.getElementById('souris???');
+        const sourisSon = document.getElementById('souris_son');
+
+// lit l'état au chargement de la page
+if (localStorage.getItem('curseurCustom') === 'true') {
+    document.body.classList.add('curseur-custom');
+}
+
+// active le curseur au clic sur le lien secret
+if (lienSecret) {
+    lienSecret.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.body.classList.toggle('curseur-custom');
+
+// sauvegarde l'état dans localStorage
+    const estActif = document.body.classList.contains('curseur-custom');
+    localStorage.setItem('curseurCustom', estActif);
+    });
+}
+
+// lit le son au clic SI curseur activé
+document.addEventListener('click', function () {
+    if (document.body.classList.contains('curseur-custom') && sourisSon) {
+    sourisSon.currentTime = 0;
+    sourisSon.play();
+    }
+});
+    </script>
 </body>
