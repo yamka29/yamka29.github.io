@@ -1,9 +1,12 @@
 body {
 	margin: 0;
 	font-family: 'Carlito', sans-serif;
+  cursor: url('images/souris.png') 2 0, auto;
 }
 
-
+a:hover, button:hover {
+    cursor: url('images/souris_survol.png') 2 0, auto;
+}
 h1 {
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 5em;
