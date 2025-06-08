@@ -131,6 +131,23 @@ header > nav > a:hover {
 
 }
 
+@keyframes apparitionTexte {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Classe à appliquer au texte */
+.apparitionTexte {
+  opacity: 0;
+  animation: apparitionTexte 1s ease-out forwards;
+}
+
 /*
 ----------PRESENTATION----------
 */
