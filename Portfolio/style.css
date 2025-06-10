@@ -236,6 +236,11 @@ header > nav > a:hover {
 	border-radius: 1em;
 }
 
+
+.langues > article > div > p {
+	color: #000000;
+}
+
 /*
 ----------QUALITES----------
 */
